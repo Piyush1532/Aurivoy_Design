@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+   --white-clr:#fff;
+   --black-clr:#000;
+   --text-clr:#fff; 
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background: #f8f8f8;
+}
+
+
+
+.btn{
+    color: var(--black-clr);
+    background:var(--white-clr) ;
+    font-size: 1.4rem;
+    padding: .5rem 2.5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--white-clr);
+    transition: all .2s ease-out;
+}
+
+.btn:hover{
+    color: var(--white-clr);
+    background: transparent;
+}
+/* Home design start here */
+
+.home{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("https://images.unsplash.com/photo-1531504060587-e6811129c0f2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border:  5px solid #fff;
+    border-radius: 2rem;
+    color: #fff;
+    position: relative;
+}
+
+.home header{
+    padding: 0 4rem;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.home header i{
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home header .img img{
+    width:140px;
+}
+
+.home header nav{
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding: .8rem 5rem;
+    background: rgb(255 255 255 /10%);
+backdrop-filter: blur(5px);
+border-top: 2px solid rgb(255 255 255 /20%);
+box-shadow:0 2px 15px rgb(0 0 0 /20%) ;
+border-radius: 2rem;
+}
+
+.home header nav a{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #ddd;
+    transition: color .2s ease;
+}
+ 
+.home header nav a:is(.active ,:hover){
+    color: #fff;
+}
+
+.home .main{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.home .main h1{
+    font-size: 9rem;
+    text-transform: none;
+    font-weight: 500;
+    max-width: 120rem;
+    letter-spacing: -3px;
+}
+
+.home .main p{
+font-size: 1.6rem;
+}
+
+.home .main .search{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background: rgb(255 255 255 /10%);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid rgb(255 255 255 /20%);
+    box-shadow: 0 2px 15px rgb(0 0 0 /10%);
+}
+
+.home .main .search ul li{
+display: inline-block;
+font-size: 1.4rem;
+padding: 0.2rem 3rem;
+cursor: pointer;
+}
+.home .main .search ul li:first-child{
+    padding-left: 1rem;
+}
+
+.home .main .search ul li:not(:last-child){
+   border-right:2px solid rgb(255 255 255 /30%); 
+}
+ .home .main .search ul li i:first-child{
+    margin-right: 1rem;
+ }
+
+/* Home design end here */
+
+
+
+
+
+
+
+/* -----Media query starts-------- */
+
+@media (max-width:1065px) {
+    html{
+        font-size: 52%;
+    }
+}
+
+
+
+
+
+
+@media (max-width:957px) {
+    html{
+        font-size: 52%;
+    }
+}
+
+
+@media (max-width:795px) {
+
+}
+
+
+@media (max-width:706px) {
+.home header i{
+    display: inline-block;
+}
+
+.home header .actions{
+left: 1rem;
+} 
+
+.home header nav{
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    width: calc(100% + 1.5rem);
+    border-radius: 0px;
+    flex-direction: column;
+    padding: 4rem;
+    padding-top: 8rem;
+    background: rgb(0 0 0 /20%);
+    border-bottom: 1px solid var(--white-clr);
+    transform: translate(0,-100%);
+    transition: transform .3s ease-in-out;
+}
+.home header nav i{
+    font-size: 2rem;
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+}
+ .home header nav.active{
+    transform: translate(0,0);
+ }
+
+
+}
+
+@media (max-width:546px) {
+
+}
+
+
+/* -----Media query end-------- */
