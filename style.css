@@ -73,7 +73,8 @@ section{
     height: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("https://images.unsplash.com/photo-1531504060587-e6811129c0f2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("https://images.unsplash.com/photo-1531504060587-e6811129c0f2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+    background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("/Images/mainImage.avif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -288,7 +289,76 @@ list-style: none;
 /* -------Best location design end here------- */
 
 
+/* -------booking design start here---------*/
 
+.booking{
+    width: 100%;
+    display: flex;
+    gap: 4rem;
+    margin: 4rem 0;
+
+}
+.booking .image,.booking .process{
+width: 100%;
+}
+
+.booking .image{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgb(0 0 0 /30%);
+}
+
+.booking .image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.booking .process .box{
+    display: flex;
+    gap: 1rem;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+.booking .process .box span{
+    font-size: 2rem;
+    width: 55px;
+ height: 50px;
+ background: var(--white-clr);
+ display: grid;
+    place-items: center;
+    border-radius: 1rem;
+}
+
+.booking .process .box .text{
+    width: 100%;
+}
+
+.booking .process .box .text h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.booking .process .box .text p{
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    color: var(--text-clr);
+}
+
+.booking .process .scale{
+    background: var(--white-clr);
+    border-radius: 1.5rem;
+    scale: 1.01;
+    box-shadow: 0 8px 20px rgb(0 0 0 /2%);
+}
+
+.booking .process .scale span{
+ background: #f2f7ff;   
+}
+
+/* -------booking design end here---------*/
 
 
 
@@ -318,6 +388,13 @@ list-style: none;
     html{
         font-size: 52%;
     }
+
+.booking{
+    flex-direction: column ;
+}
+
+
+
 }
 
 
