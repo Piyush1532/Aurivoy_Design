@@ -1,425 +1,466 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- text-decoration: none;
-    text-transform: capitalize;
-    font-family: "Open Sans", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Open Sans", sans-serif;
 }
 
-:root{
-   --white-clr:#fff;
-   --black-clr:#000;
-   --text-clr:#777; 
+:root {
+  --white-clr: #fff;
+  --black-clr: #000;
+  --text-clr: #777;
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    background: #f8f8f8;
+body {
+  background: #f8f8f8;
 }
 
-
-
-.btn{
-    color: var(--black-clr);
-    background:var(--white-clr) ;
-    font-size: 1.4rem;
-    padding: .5rem 2.5rem;
-    border-radius: 2rem;
-    border: 2px solid var(--white-clr);
-    transition: all .2s ease-out;
+.btn {
+  color: var(--black-clr);
+  background: var(--white-clr);
+  font-size: 1.4rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 2rem;
+  border: 2px solid var(--white-clr);
+  transition: all 0.2s ease-out;
 }
 
-.btn:hover{
-    color: var(--white-clr);
-    background: transparent;
+.btn:hover {
+  color: var(--white-clr);
+  background: transparent;
 }
 
-section{
-    padding: 4rem 10rem;
+section {
+  padding: 4rem 10rem;
 }
 
-
-
-.label{
-    font-size: 1.4rem;
-    color: var(--text-clr);
-    font-weight: 400;
+.label {
+  font-size: 1.4rem;
+  color: var(--text-clr);
+  font-weight: 400;
 }
 
-.heading{
-    font-size: 6rem;
-    font-weight: 500;
-    letter-spacing: -2px;
-    white-space: nowrap;
+.heading {
+  font-size: 6rem;
+  font-weight: 500;
+  letter-spacing: -2px;
+  white-space: nowrap;
 }
-
 
 /* Home design start here */
 
-.home{
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
-    padding: 2rem;
-    /* background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("https://images.unsplash.com/photo-1531504060587-e6811129c0f2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
-    background: linear-gradient(rgb(0 0 0 /10%),rgb(0 0 0 /10%)),url("/Images/mainImage.avif");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border:  5px solid #fff;
-    border-radius: 2rem;
-    color: #fff;
-    position: relative;
+.home {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(rgb(0 0 0 /10%), rgb(0 0 0 /10%)),
+    url("/Images/mainImage.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 5px solid #fff;
+  border-radius: 2rem;
+  color: #fff;
+  position: relative;
 }
 
-.home header{
-    padding: 0 4rem;
-    position: absolute;
-    right: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+.home header {
+  padding: 0 4rem;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-
-.home header i{
-    font-size: 1.8rem;
-    cursor: pointer;
-    display: none;
+.home header i {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
 }
 
-.home header .img img{
-    width:140px;
+.home header .img img {
+  width: 140px;
 }
 
-.home header nav{
-    display: flex;
-    align-items: center;
-    gap: 6rem;
-    padding: .8rem 5rem;
-    background: rgb(255 255 255 /10%);
-backdrop-filter: blur(5px);
-border-top: 2px solid rgb(255 255 255 /20%);
-box-shadow:0 2px 15px rgb(0 0 0 /20%) ;
-border-radius: 2rem;
+.home header nav {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  padding: 0.8rem 5rem;
+  background: rgb(255 255 255 /10%);
+  backdrop-filter: blur(5px);
+  border-top: 2px solid rgb(255 255 255 /20%);
+  box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+  border-radius: 2rem;
 }
 
-.home header nav a{
-    font-size: 1.5rem;
-    text-transform: capitalize;
-    color: #ddd;
-    transition: color .2s ease;
-}
- 
-.home header nav a:is(.active ,:hover){
-    color: #fff;
+.home header nav a {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #ddd;
+  transition: color 0.2s ease;
 }
 
-.home .main{
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    flex-direction: column;
-    text-align: center;
+.home header nav a:is(.active, :hover) {
+  color: #fff;
 }
 
-
-.home .main h1{
-    font-size: 9rem;
-    text-transform: none;
-    font-weight: 500;
-    max-width: 120rem;
-    letter-spacing: -3px;
+.home .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-.home .main p{
-font-size: 1.6rem;
+.home .main h1 {
+  font-size: 9rem;
+  text-transform: none;
+  font-weight: 500;
+  max-width: 120rem;
+  letter-spacing: -3px;
 }
 
-.home .main .search{
-    margin-top: 3rem;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 3rem;
-    background: rgb(255 255 255 /10%);
-    backdrop-filter: blur(5px);
-    border-top: 2px solid rgb(255 255 255 /20%);
-    box-shadow: 0 2px 15px rgb(0 0 0 /10%);
+.home .main p {
+  font-size: 1.6rem;
 }
 
-.home .main .search ul li{
-display: inline-block;
-font-size: 1.4rem;
-padding: 0.2rem 3rem;
-cursor: pointer;
-}
-.home .main .search ul li:first-child{
-    padding-left: 1rem;
+.home .main .search {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 3rem;
+  background: rgb(255 255 255 /10%);
+  backdrop-filter: blur(5px);
+  border-top: 2px solid rgb(255 255 255 /20%);
+  box-shadow: 0 2px 15px rgb(0 0 0 /10%);
 }
 
-.home .main .search ul li:not(:last-child){
-   border-right:2px solid rgb(255 255 255 /30%); 
+.home .main .search ul li {
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 0.2rem 3rem;
+  cursor: pointer;
 }
- .home .main .search ul li i:first-child{
-    margin-right: 1rem;
- }
- .home .main .search ul li i:last-child{
-    font-size: .8rem;
-     margin-left: 3rem;
-     margin-top: -.5rem;
- }
+.home .main .search ul li:first-child {
+  padding-left: 1rem;
+}
 
- .home .main .search button{
-    padding: .8rem  3rem;
-    font-weight: 600;
-    cursor: pointer;
- }
+.home .main .search ul li:not(:last-child) {
+  border-right: 2px solid rgb(255 255 255 /30%);
+}
+.home .main .search ul li i:first-child {
+  margin-right: 1rem;
+}
+.home .main .search ul li i:last-child {
+  font-size: 0.8rem;
+  margin-left: 3rem;
+  margin-top: -0.5rem;
+}
+
+.home .main .search button {
+  padding: 0.8rem 3rem;
+  font-weight: 600;
+  cursor: pointer;
+}
 /* Home design end here */
-
-
-
 
 /*-------- Achivement design start here ----- */
 
-.achivment{
-    width: 100%;
-    display: flex;
-    gap: 2rem;
-    transform: translate(0,-50%);
+.achivment {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  transform: translate(0, -50%);
 }
 
-.achivment .box{
-    padding: 2rem;
-    background: var(--white-clr);
-    box-shadow: 0 10px 25px rgb(0 0 0 /10%);
-    text-align: center;
-    flex-grow: 1;
-border-radius: 2rem;
+.achivment .box {
+  padding: 2rem;
+  background: var(--white-clr);
+  box-shadow: 0 10px 25px rgb(0 0 0 /10%);
+  text-align: center;
+  flex-grow: 1;
+  border-radius: 2rem;
 }
 
-.achivment .box h5{
-    font-size: 5rem;
-    font-weight: 500;
+.achivment .box h5 {
+  font-size: 5rem;
+  font-weight: 500;
 }
 
-.achivment .box p{
-    font-size: 1.6rem;
-    color:var(--text-clr);
+.achivment .box p {
+  font-size: 1.6rem;
+  color: var(--text-clr);
 }
 
 /*-------- Achivement design end here ----- */
 
-
-
 /* -------Best location design start here------- */
-.responsive-text{
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
+.responsive-text {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
 }
 
-.responsive-text .text-box{
-    max-width: 60rem;
-    margin-top: auto;
+.responsive-text .text-box {
+  max-width: 60rem;
+  margin-top: auto;
 }
-.responsive-text .text-box p{
-    font-size: 1.6rem;
-    color: var(--text-clr);
-    line-height: 1.8;
+.responsive-text .text-box p {
+  font-size: 1.6rem;
+  color: var(--text-clr);
+  line-height: 1.8;
 }
-.location .images{
-margin-top: 6rem;
-display: flex;
-flex-wrap: wrap;
-gap: 2rem;
-}
-
-.location .images .box{
-    height: 35rem;
-    flex-grow: 1;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 0 8px 20px rgb(0 0 0 /30%);
+.location .images {
+  margin-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
-
-.location .images .box img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.location .images .box {
+  height: 35rem;
+  flex-grow: 1;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 8px 20px rgb(0 0 0 /30%);
 }
 
-.location .images .box ul{
-position: absolute;
-left: 2rem;
-bottom: 2rem;
-list-style: none;
+.location .images .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
-
-.location .images .box ul li{
-    font-size: 1.6rem;
-    color: #ddd; 
-    backdrop-filter: blur(10px);
+.location .images .box ul {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  list-style: none;
 }
 
-.location .images .box ul li:last-child{
-    color: var(--white-clr);
+.location .images .box ul li {
+  font-size: 1.6rem;
+  color: #ddd;
+  backdrop-filter: blur(10px);
+}
+
+.location .images .box ul li:last-child {
+  color: var(--white-clr);
 }
 
 /* -------Best location design end here------- */
 
-
 /* -------booking design start here---------*/
 
-.booking{
-    width: 100%;
-    display: flex;
-    gap: 4rem;
-    margin: 4rem 0;
-
+.booking {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  margin: 4rem 0;
 }
-.booking .image,.booking .process{
-width: 100%;
-}
-
-.booking .image{
-    border-radius: 1.5rem;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgb(0 0 0 /30%);
+.booking .image,
+.booking .process {
+  width: 100%;
 }
 
-.booking .image img{
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+.booking .image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgb(0 0 0 /30%);
 }
 
-.booking .process .box{
-    display: flex;
-    gap: 1rem;
-    padding: 1.5rem;
-    margin-top: 3rem;
+.booking .image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
-.booking .process .box span{
-    font-size: 2rem;
-    width: 55px;
- height: 50px;
- background: var(--white-clr);
- display: grid;
-    place-items: center;
-    border-radius: 1rem;
+.booking .process .box {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
 }
 
-.booking .process .box .text{
-    width: 100%;
+.booking .process .box span {
+  font-size: 2rem;
+  width: 55px;
+  height: 50px;
+  background: var(--white-clr);
+  display: grid;
+  place-items: center;
+  border-radius: 1rem;
 }
 
-.booking .process .box .text h4{
-    font-size: 2.5rem;
-    font-weight: 600;
+.booking .process .box .text {
+  width: 100%;
 }
 
-.booking .process .box .text p{
-    margin-top: .5rem;
-    font-size: 1.4rem;
-    color: var(--text-clr);
+.booking .process .box .text h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
-.booking .process .scale{
-    background: var(--white-clr);
-    border-radius: 1.5rem;
-    scale: 1.01;
-    box-shadow: 0 8px 20px rgb(0 0 0 /2%);
+.booking .process .box .text p {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--text-clr);
 }
 
-.booking .process .scale span{
- background: #f2f7ff;   
+.booking .process .scale {
+  background: var(--white-clr);
+  border-radius: 1.5rem;
+  scale: 1.01;
+  box-shadow: 0 8px 20px rgb(0 0 0 /2%);
+}
+
+.booking .process .scale span {
+  background: #f2f7ff;
 }
 
 /* -------booking design end here---------*/
 
+/* packages design start here */
+.packages .images {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
 
+.packages .images .box {
+  width: 100%;
+  height: 50rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgb(0 0 0 /10%);
+  position: relative;
+}
 
+.packages .images .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.packages .images .box .top {
+  position: absolute;
+  top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--white-clr);
+  list-style: none;
+}
+.packages .images .box .top li {
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  border-radius: 3rem;
+  background: rgb(255 255 255 /10%);
+  backdrop-filter: blur(10px);
+}
 
+.packages .images .box .top li i {
+  color: #fdcc0d;
+}
 
+.packages .images .box .bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  background: rgb(255 255 255 /10%);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1rem;
+}
 
+.packages .images .box .bottom time {
+  color: #ddd;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.packages .images .box .bottom ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+  margin-top: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--white-clr);
+}
 
-
-
-
+/* packages design end here */
 
 /* -----Media query starts-------- */
 
-@media (max-width:1065px) {
-.heading{
-   white-space: wrap; 
-}
-}
-
-
-
-
-
-
-@media (max-width:957px) {
-    html{
-        font-size: 52%;
-    }
-
-.booking{
-    flex-direction: column ;
+@media (max-width: 1065px) {
+  .heading {
+    white-space: wrap;
+  }
 }
 
+@media (max-width: 957px) {
+  html {
+    font-size: 52%;
+  }
 
+  .booking {
+    flex-direction: column;
+  }
 
+  .packages .images {
+    grid-template-columns: 1fr;
+  }
 }
 
-
-@media (max-width:795px) {
-.home .main h1{
-font-size: 6rem;
+@media (max-width: 795px) {
+  .home .main h1 {
+    font-size: 6rem;
+  }
 }
-}
 
-
-@media (max-width:706px) {
-section{
+@media (max-width: 706px) {
+  section {
     padding: 4rem;
-}
+  }
 
-
-.home header i{
+  .home header i {
     display: inline-block;
-}
+  }
 
-.home header .actions{
-left: 1rem;
-} 
+  .home header .actions {
+    left: 1rem;
+  }
 
-.home header nav{
+  .home header nav {
     position: absolute;
     top: -3rem;
     left: -1rem;
@@ -430,60 +471,57 @@ left: 1rem;
     padding-top: 8rem;
     background: rgb(0 0 0 /20%);
     border-bottom: 1px solid var(--white-clr);
-    transform: translate(0,-100%);
-    transition: transform .3s ease-in-out;
-}
-.home header nav i{
+    transform: translate(0, -100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  .home header nav i {
     font-size: 2rem;
     position: absolute;
     top: 4rem;
     right: 4rem;
-}
- .home header nav.active{
-    transform: translate(0,0);
- }
+  }
+  .home header nav.active {
+    transform: translate(0, 0);
+  }
 
- .home .main .search ul li{
-    padding: .5rem;
- }
+  .home .main .search ul li {
+    padding: 0.5rem;
+  }
 
- .home .main .search ul li i:last-child{
+  .home .main .search ul li i:last-child {
     margin-left: 1rem;
- }
+  }
 
-.achivment{
-    transform: translate(0,0);
+  .achivment {
+    transform: translate(0, 0);
     flex-wrap: wrap;
-}
+  }
 
-.responsive-text{
+  .responsive-text {
     flex-direction: column;
     gap: 2rem;
+  }
 }
 
-}
-
-@media (max-width:546px) {
-
-.heading{
+@media (max-width: 546px) {
+  .heading {
     font-size: 4rem;
+  }
+
+  .home .main h1 {
+    font-size: 3.3rem;
+    letter-spacing: 0;
+  }
+
+  .home .main .search {
+    position: relative;
+  }
+
+  .home .main .search button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 140%);
+  }
 }
-
-    .home .main h1{
-        font-size: 3.3rem;
-        letter-spacing: 0;
-    }
-
-    .home .main .search{
-        position: relative;
-    }
-
-    .home .main .search button{
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,140%);
-    }
-}
-
 
 /* -----Media query end-------- */
