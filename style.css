@@ -419,6 +419,81 @@ section {
 
 /* packages design end here */
 
+
+/* blog design start here */
+.blog{
+  width: 100%;
+
+}
+
+.blog .container{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+  gap: 2rem;
+
+}
+
+.blog .container .box{
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 30px rgb(0 0 0 /10%);
+}
+
+.blog .container .box img{
+width: 100%;
+height: 35rem;
+border-radius: 1rem;
+object-fit: cover;
+object-position: center;
+}
+.blog .container .box .content{
+  padding: 1.5rem;
+}
+.blog .container .box .content time{
+  font-size: 1.4rem;
+  color: var(--text-clr);
+}
+.blog .container .box .content h3{
+  font-size: 3rem;
+  margin: 1.3rem 0;
+  font-weight: 600;
+}
+
+.blog .container .box .content p{
+  color: var(--text-clr);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+.blog .action{
+  width: 100%;
+  text-align: center;
+  margin-top: 4rem;
+}
+.blog .action a{
+  font-size: 1.2rem;
+  padding: 1rem 4rem;
+  background: var(--black-clr);
+  color: var(--white-clr);
+  display: inline-block;
+  border-radius: 2rem;
+  transition: all .3s ease;
+}
+
+.blog .action a:hover{
+  box-shadow:0 8px 10px rgb(0 0 0 /20%) ;
+  transform: translate(0,-5px);
+}
+
+/* blog design start end */
+
+
+
+
+
+
 /* -----Media query starts-------- */
 
 @media (max-width: 1065px) {
