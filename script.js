@@ -45,3 +45,37 @@ gsap.utils.toArray(".animation-on-scroll").forEach((box)=>{
 
   })
 })
+
+const textReveal=document.querySelectorAll(".text-reveal-animation")
+
+textReveal.forEach(textAnimation => {
+  textAnimation.innerHTML = textAnimation.textContent
+    .split(" ")
+    .map(word => {
+      return `<span class="word">${word.split("").map(letter => 
+        `<span class="letter">${letter === '' ? '&nbsp;' : letter}</span>`
+      ).join("")}</span>`;
+    })
+    .join(" ");
+
+ 
+  gsap.fromTo(
+    textAnimation.querySelectorAll(".letter"),
+    {
+      y: "100%",
+      opacity: 0,
+    },
+    {
+      y: "0%",
+      opacity: 1,
+      duration: 0.3,
+      stagger: 0.05,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: textAnimation,
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
+});
