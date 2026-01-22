@@ -77,7 +77,7 @@ section {
   min-height: 100vh;
   padding: 2rem;
   background: linear-gradient(rgb(0 0 0 /10%), rgb(0 0 0 /10%)),
-    url("/Images/mainImage.avif");
+    url("./Images/mainImage.avif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
