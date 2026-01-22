@@ -112,7 +112,7 @@ section {
   display: flex;
   align-items: center;
   gap: 6rem;
-  padding: 0.8rem 5rem;
+  padding: 0.9rem 5rem;
   background: rgb(255 255 255 /10%);
   backdrop-filter: blur(5px);
   border-top: 2px solid rgb(255 255 255 /20%);
@@ -769,6 +769,9 @@ flex-wrap: wrap;}
 
 
 @media (max-width: 546px) {
+  .btn{
+    display: none;
+  }
   .heading {
     font-size: 4rem;
   }
@@ -793,7 +796,9 @@ flex-wrap: wrap;}
   flex-wrap: wrap;
   gap: 1rem;
 }
-
+footer .copyright p {
+  font-size: 1.6rem;
+}
 }
 
 
